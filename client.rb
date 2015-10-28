@@ -9,6 +9,8 @@ XapixClient.configure do |config|
   config.autoload_models = true
 end
 
+puts "Autoloaded Models: #{XapixClient.autoloaded_models.map(&:name)}"
+
 IDS = Hash[%i(asrq flight1 rt rct).map { |key| [key, SecureRandom.uuid] }]
 params = { # from web form or similar
   traveller1: { passenger_type_code: 'ADT', quantity: '1' },
