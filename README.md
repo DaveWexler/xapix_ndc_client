@@ -15,7 +15,7 @@ I'd like to put here our links to available resource documents and code, too.
 Neither json:api nor json_api_client support it yet, but the ultimate way of triggering a transaction would look like:
 
 ```ruby
-AirShoppingRequest.new({ asrq_id: IDS[:asrq], agent_user_id: AGENT_ID }).tap do |r|
+AirShoppingRequest.new(asrq_id: IDS[:asrq], agent_user_id: AGENT_ID).tap do |r|
   r.travellers << RequestedTraveller.new(params[:traveller1])
   r.flights << RequestedFlight.new(params[:flight1])
   r.cabin_types << RequestedCabinType.new(params[:cabin_type1])
