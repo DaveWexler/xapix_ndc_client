@@ -1,6 +1,10 @@
 # NDC Air Shopping Client ALPHA
 
-Demo implementation using [xapix_client](https://github.com/pickledolives/xapix_client) and the recent "XapiX NDC" Project on http://www.xapix.io
+Demo implementation using [xapix_client](https://github.com/pickledolives/xapix_client) and the "xapix_ndc_air_shopping" Project on https://app.xapix.io
+
+The following node.js scripts are triggered on POSTing an AirShoppingRequest ie an AirShoppingOfferRequest: https://gist.github.com/oliver-xapix-io/e3decab860afda6d7078
+
+Be aware the approach we are taking here is to a certain degree inspired by IATA NDC. 
 
 Here I'd like to have the developer XapiX NDC client discussion. This may serve as a playground to evaluate best ways to deal with NDC scenarios and implementations.
 
